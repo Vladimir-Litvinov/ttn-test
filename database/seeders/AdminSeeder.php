@@ -27,6 +27,13 @@ class AdminSeeder extends Seeder
         $user->password = \Illuminate\Support\Facades\Hash::make('123456');
         $user->save();
 
+        $user1 = new \App\Models\User();
+        $user1->email = 'user1@user.com';
+        $user1->name = 'user1';
+        $user1->role = 'USER';
+        $user1->password = \Illuminate\Support\Facades\Hash::make('123456');
+        $user1->save();
+
 
     }
 }
