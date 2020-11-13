@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class AdminSeeder extends Seeder
 {
@@ -20,19 +23,47 @@ class AdminSeeder extends Seeder
         $admin->password = \Illuminate\Support\Facades\Hash::make('123456');
         $admin->save();
 
-        $user = new \App\Models\User();
-        $user->email = 'user@user.com';
-        $user->name = 'user';
-        $user->role = 'USER';
-        $user->password = \Illuminate\Support\Facades\Hash::make('123456');
-        $user->save();
+        DB::table('users')->insert([
+            'email' => Str::random(4).'@gmail.com',
+            'name' => 'user name' . Str::random(3),
+            'role' => 'USER',
+            'password' => Hash::make('123456'),
+        ]);
 
-        $user1 = new \App\Models\User();
-        $user1->email = 'user1@user.com';
-        $user1->name = 'user1';
-        $user1->role = 'USER';
-        $user1->password = \Illuminate\Support\Facades\Hash::make('123456');
-        $user1->save();
+        DB::table('users')->insert([
+            'email' => Str::random(4).'@gmail.com',
+            'name' => 'user name' . Str::random(3),
+            'role' => 'USER',
+            'password' => Hash::make('123456'),
+        ]);
+
+        DB::table('users')->insert([
+            'email' => Str::random(4).'@gmail.com',
+            'name' => 'user name' . Str::random(3),
+            'role' => 'USER',
+            'password' => Hash::make('123456'),
+        ]);
+
+        DB::table('users')->insert([
+            'email' => Str::random(4).'@gmail.com',
+            'name' => 'user name' . Str::random(3),
+            'role' => 'USER',
+            'password' => Hash::make('123456'),
+        ]);
+
+        DB::table('users')->insert([
+            'email' => Str::random(4).'@gmail.com',
+            'name' => 'user name' . Str::random(3),
+            'role' => 'USER',
+            'password' => Hash::make('123456'),
+        ]);
+
+//        $user1 = new \App\Models\User();
+//        $user1->email = Str::random(10).'@gmail.com';
+//        $user1->name = Str::random(10);
+//        $user1->role = 'USER';
+//        $user1->password = \Illuminate\Support\Facades\Hash::make('123456');
+//        $user1->save();
 
 
     }
