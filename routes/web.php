@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DriverController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\UserController;
@@ -29,5 +30,6 @@ Route::group(['middleware' => ['admin']], function () {
 
     Route::resource('user', UserController::class);
     Route::resource('partner', PartnerController::class);
+    Route::resource('driver', DriverController::class);
 });
 

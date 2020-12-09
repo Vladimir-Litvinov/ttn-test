@@ -15,14 +15,12 @@ class FailedJobSeeder extends Seeder
     public function run()
     {
         DB::table('failed_jobs')->insert([
-            'id' => 1,
             'connection' => 'связь',
             'queue' => 'очередь',
             'payload' => 'полезная нагрузка',
             'exception' => 'исключение',
         ]);
         DB::table('failed_jobs')->insert([
-            'id' => 2,
             'connection' => 'связь1',
             'queue' => 'очередь1',
             'payload' => 'полезная нагрузка1',

@@ -36,11 +36,11 @@
                         <td>{{$model->responsible_person}}</td>
 
                         <td style="text-align:left">
-{{--                            {{Form::open(['class' => 'confirm-delete', 'route' => ['partner.destroy', $model->id], 'method' => 'DELETE'])}}--}}
+                            {{Form::open(['class' => 'confirm-delete', 'route' => ['partner.destroy', $model->id], 'method' => 'DELETE'])}}
                             {{ link_to_route('partner.edit', 'Редагувати', [$model->id], ['class' => 'btn btn-success btn-xs']) }}<br/>
 {{--                            {{ link_to_route('partner.show', 'Список адрес', [$model->id], ['class' => 'btn btn-info btn-xs']) }}<br/>--}}
-{{--                            {{Form::button('Видалити', ['class' => 'btn btn-danger btn-xs', 'type' => 'submit'])}} {{Form::close()}}--}}
-{{--                            {{Form::close()}}--}}
+                            {{Form::button('Видалити', ['class' => 'btn btn-danger btn-xs', 'type' => 'submit'])}} {{Form::close()}}
+                            {{Form::close()}}
                         </td>
                     </tr>
                 @endforeach

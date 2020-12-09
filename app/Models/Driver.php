@@ -5,15 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Partner extends Model
+class Driver extends Model
 {
     use HasFactory;
-
-    protected $fillable = [
-        'firm',
-        'code',
-        'responsible_person'
-    ];
-
+    protected $fillable = ['name', 'driver_license'];
 
 }

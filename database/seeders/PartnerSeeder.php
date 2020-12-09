@@ -17,7 +17,17 @@ class PartnerSeeder extends Seeder
         DB::table('partners')->insert([
             'firm' => 'Enot Company',
             'code' => '123',
+            'responsible_person' => 'Enot'
+        ]);
+        DB::table('partners')->insert([
+            'firm' => 'Ron Company',
+            'code' => '123',
             'responsible_person' => 'Ron'
+        ]);
+        DB::table('partners')->insert([
+            'firm' => 'Kort Company',
+            'code' => '123',
+            'responsible_person' => 'Kort'
         ]);
     }
 }

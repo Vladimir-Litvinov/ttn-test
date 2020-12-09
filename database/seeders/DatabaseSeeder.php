@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(AdminSeeder::class);
         $this->call(FailedJobSeeder::class);
         $this->call(PartnerSeeder::class);
+        $this->call(DriverSeeder::class);
 
     }
 }

@@ -36,4 +36,10 @@ class PartnerController extends Controller
         $partner->save();
         return redirect()->route('partner.index');
     }
+
+    public function destroy(Partner $partner)
+    {
+        $partner->delete();
+        return redirect()->route('partner.index');
+    }
 }

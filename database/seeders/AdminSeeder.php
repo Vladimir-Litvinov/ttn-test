@@ -24,37 +24,42 @@ class AdminSeeder extends Seeder
         $admin->save();
 
         DB::table('users')->insert([
-            'email' => Str::random(4).'@gmail.com',
+            'email' => Str::random(4).'@1gmail.com',
             'name' => 'user name' . Str::random(3),
             'role' => 'USER',
+            'code' => 123456,
             'password' => Hash::make('123456'),
         ]);
 
         DB::table('users')->insert([
-            'email' => Str::random(4).'@gmail.com',
+            'email' => Str::random(4).'@2gmail.com',
             'name' => 'user name' . Str::random(3),
             'role' => 'USER',
+            'code' => 123456,
             'password' => Hash::make('123456'),
         ]);
 
         DB::table('users')->insert([
-            'email' => Str::random(4).'@gmail.com',
+            'email' => Str::random(4).'@3gmail.com',
             'name' => 'user name' . Str::random(3),
             'role' => 'USER',
+            'code' => 123456,
             'password' => Hash::make('123456'),
         ]);
 
         DB::table('users')->insert([
-            'email' => Str::random(4).'@gmail.com',
+            'email' => Str::random(4).'@4gmail.com',
             'name' => 'user name' . Str::random(3),
             'role' => 'USER',
+            'code' => 123456,
             'password' => Hash::make('123456'),
         ]);
 
         DB::table('users')->insert([
-            'email' => Str::random(4).'@gmail.com',
+            'email' => Str::random(4).'@5gmail.com',
             'name' => 'user name' . Str::random(3),
             'role' => 'USER',
+            'code' => 123456,
             'password' => Hash::make('123456'),
         ]);
 
