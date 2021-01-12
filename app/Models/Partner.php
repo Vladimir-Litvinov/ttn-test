@@ -15,5 +15,9 @@ class Partner extends Model
         'responsible_person'
     ];
 
+    public function address()
+    {
+        return $this->hasMany(Address::class, 'partner_id');
+    }
 
 }

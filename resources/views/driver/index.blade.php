@@ -33,12 +33,12 @@
                         <td>{{$model->name}}</td>
                         <td>{{$model->driver_license}}</td>
 
-{{--                        <td style="text-align:left">--}}
-{{--                            {{Form::open(['style' => 'display:flex;float:left', 'route' => ['driver.destroy', $model->id], 'method' => 'DELETE'])}}--}}
-{{--                            {{ link_to_route('driver.edit', 'Редагувати', [$model->id], ['class' => 'btn btn-success btn-xs']) }}<br/>--}}
-{{--                            {{Form::button('Видалити', ['class' => 'btn btn-danger btn-xs', 'type' => 'submit'])}} {{Form::close()}}--}}
-{{--                            {{Form::close()}}--}}
-{{--                        </td>--}}
+                        <td style="text-align:left">
+                            {{Form::open(['style' => 'display:flex;float:left', 'route' => ['driver.destroy', $model->id], 'method' => 'DELETE'])}}
+                            {{ link_to_route('driver.edit', 'Редагувати', [$model->id], ['class' => 'btn btn-success btn-xs']) }}<br/>
+                            {{Form::button('Видалити', ['class' => 'btn btn-danger btn-xs', 'type' => 'submit'])}} {{Form::close()}}
+                            {{Form::close()}}
+                        </td>
                     </tr>
                 @endforeach
 
